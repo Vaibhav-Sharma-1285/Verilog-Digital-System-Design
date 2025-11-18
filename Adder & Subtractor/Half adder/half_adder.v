@@ -5,7 +5,7 @@ input a,b,
 output s,c
     );
     
-    assign s=a^b;
+    assign s=(a&(~b))|(b&(~a));
     assign c=a&b;
     
 endmodule
